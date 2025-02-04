@@ -2,7 +2,7 @@ let bubblecontainer=document.querySelector(".bubblecontainer")
 let hitval =0;
 function hitgen(){
 let hitter= document.querySelector(".hitter")
- hitval=Math.floor(Math.random()*10)
+ hitval=Math.floor(Math.random()*100)
 hitter.innerHTML=hitval;
 }
 
@@ -31,7 +31,7 @@ function bubblecreator(){
     
     let s = "";
     for(let i=0;i<133;i++){
-        s +=`<div class="bubble"> ${Math.floor(Math.random()*10)}</div>`; 
+        s +=`<div class="bubble"> ${Math.floor(Math.random()*100)}</div>`; 
     }
     bubblecontainer.innerHTML=s;
 }
